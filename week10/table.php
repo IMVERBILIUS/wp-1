@@ -46,6 +46,7 @@
     <br />
 		<a href="table_export.php?type=pdf" target="_blank">Export PDF</a>
         <a href="table_export.php?type=xls" target="_blank">Export excel</a>
+        
 </body>
 </html>
 
