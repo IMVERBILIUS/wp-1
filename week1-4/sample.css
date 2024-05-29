@@ -1,0 +1,10 @@
+.div-style{
+    background-color: black;
+    height: 100px; 
+    width: 200px; 
+    margin: auto;
+    font-weight: bold;
+}
+.p-style{
+    color: red;
+}

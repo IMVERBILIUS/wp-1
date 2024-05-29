@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Load Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="MySelect" onchange="MyFunction()">
+        <option>Select One</option>
+        <option value="Audi">Low</option>
+        <option value="BMW">Medium</option>
+        <option value="Mercedes">High</option>
+    </select>
+    <input type="text" id="CarSelected" name="title" value="">
+
+    <script>
+        function MyFunction() {
+            var CarBrand = document.getElementById("MySelect").value;
+            var CarSelectedElement = document.getElementById("CarSelected");
+
+            if (CarBrand === "Audi") {
+                CarSelectedElement.value = "50 or below";
+            } else if (CarBrand === "BMW") {
+                CarSelectedElement.value = "between 60 to 75";
+            } else if (CarBrand === "Mercedes") {
+                CarSelectedElement.value = " 75 up";
+            }
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

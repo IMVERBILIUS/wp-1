@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <form action="post_response.php" method="POST">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" value=""></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="text" name="Age" value=""></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="male"> Male<br>
+                    <input type="radio" name="gender" value="female"> Female</td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td><input type="checkbox" name="hobbies[]" value="sport"> Sport
+                    <input type="checkbox" name="hobbies[]" value="science"> Science
+                    <input type="checkbox" name="hobbies[]" value="art"> Art</td>
+                <td><button type="submit">Save</button></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
